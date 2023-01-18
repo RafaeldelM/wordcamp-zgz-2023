@@ -30,7 +30,6 @@
   const camera = new THREE.PerspectiveCamera(50, myCanvas.offsetWidth / myCanvas.offsetHeight);
   camera.position.set(2, 2, 2);
   camera.lookAt(scene.position);
-  console.log('dd2');
 
   // Creamos el renderizador
   const renderer = new THREE.WebGLRenderer({
