@@ -78,11 +78,13 @@
     cargarSofa('azul');
   }
 
-  document.getElementById('boton_marron').onclick = function() {
+  document.getElementById('boton_beige').onclick = function() {
     cargarSofa('beige');
   }
 
-
+  document.getElementById('boton_rojo').onclick = function() {
+    cargarSofa('rojo');
+  }
 
   function cargarSofa(nombre_color) {
     let nombre_modelo = 'sofa_gris.glb';
@@ -105,7 +107,7 @@
 
     const loader = new GLTFLoader()
     loader.load(
-      'http://localhost:10004/wp-content/uploads/2023/01/' + nombre_modelo,
+      'https://wordcamp.elementor.cloud/wp-content/uploads/2023/01/' + nombre_modelo,
       function(gltf) {
         scene.add(gltf.scene)
 
